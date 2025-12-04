@@ -1,4 +1,3 @@
-/* RESET */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -195,18 +194,22 @@ body {
 .footer-col.right {
     column-width: flex;
     margin-left: auto;  /* skubber kolonnen til højre på brede skærme */
+    align-items: right;
     text-align: left;
-    padding-left: 20%;
+    
+    
 }
 .footer-col.center {
     column-width: flex;
-    margin-left: auto;  
+    margin: auto;  
     text-align: center; /* centrerer teksten i midter kolonnen */
+    
 }
 .footer-col.left {
     column-width: flex;
-    margin-left: auto;  
-    text-align: left; /* centrerer teksten i midter kolonnen */
+    margin-right: auto;  
+    text-align: left; /* centrerer teksten til venstre i kolonnen */
+    
 }
 
 
@@ -229,53 +232,5 @@ body {
      .footer-col.left {      
         margin-left: 0;
         text-align: center; 
-    }
-}
-
-/* MOBILE BREAKPOINT */
-@media (max-width: 800px) {
-    .burger {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background: white;
-        position: absolute;
-        right: 2rem;
-        top: 80px;
-        padding: 1rem 2rem;
-        gap: 1.2rem;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    }
-
-    .nav-links.open {
-        display: flex;
-    }
-
-    .image-wrapper {
-        text-align: center;
-        align-items: center;
-    }
-
-    .cta, .cta-sub {
-        position: static;
-        transform: none;
-        width: 100%;
-        margin-top: 1rem;
-    }
-
-    .cta {
-        font-size: 2rem;
-    }
-
-    .cta-sub {
-        font-size: 1.2rem;
-    }
-
-    .section.gray {
-        height: auto;
-        padding: 2rem 1rem;
     }
 }
