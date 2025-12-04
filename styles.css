@@ -176,20 +176,60 @@ body {
 
 /* FOOTER */
 .footer {
-    width: 100%;
+    max-width: 100%;
     background: #004076;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 1rem;
     color: white;
     font-size: 1.2rem;
 }
 
-.footer-col {
+.footer-col  {
     flex: 1;
     min-width: 200px;
     margin: 1rem 0;
+}
+
+.footer-col.right {
+    column-width: flex;
+    margin-left: auto;  /* skubber kolonnen til højre på brede skærme */
+    text-align: left;
+    padding-left: 20%;
+}
+.footer-col.center {
+    column-width: flex;
+    margin-left: auto;  
+    text-align: center; /* centrerer teksten i midter kolonnen */
+}
+.footer-col.left {
+    column-width: flex;
+    margin-left: auto;  
+    text-align: left; /* centrerer teksten i midter kolonnen */
+}
+
+
+/* RESPONSIVT BREAKPOINT */
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;      /* kolonner under hinanden */
+        text-align: center;
+        align-content: center;
+    }
+
+    .footer-col.right {
+        margin-left: 0;
+        text-align: center; 
+    }
+     .footer-col.center {
+        margin-left: 0;
+        text-align: center; 
+    }
+     .footer-col.left {      
+        margin-left: 0;
+        text-align: center; 
+    }
 }
 
 /* MOBILE BREAKPOINT */
@@ -237,11 +277,5 @@ body {
     .section.gray {
         height: auto;
         padding: 2rem 1rem;
-    }
-
-    .footer {
-        text-align: center;
-        flex-direction: column;
-        gap: 2rem;
     }
 }
