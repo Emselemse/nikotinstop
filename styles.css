@@ -61,15 +61,15 @@ body {
 .hero-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* keeps full image visible & responsive */
+    object-fit: cover; /* det fulde billede er hele tiden vist og responsiv */
     display: block;
 }
 
 /* RIGHT SIDE TEXT */
 .hero-text {
     flex: 1;
-    background: #0f2c55;  /* matches your dark blue */
-    color: white;
+    background: #0f2c55;
+    color: #EDE9CF;/* light cream text*/
     display: flex;
     flex-direction: column;
     justify-content: center;
