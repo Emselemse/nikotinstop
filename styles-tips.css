@@ -1,9 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: Arial, sans-serif;
 }
@@ -37,12 +31,6 @@ body {
     text-decoration: none;
 }
 
-.burger {
-    display: none;
-    border: none;
-    background: none;
-    font-size: 2rem;
-}
 
 /* HERO */
 .hero {
@@ -54,7 +42,6 @@ body {
 /* LEFT SIDE IMAGE */
 .hero-img {
     flex: 1;
-    overflow: hidden;
 }
 
 .hero-img img {
@@ -117,7 +104,7 @@ body {
     .hero-text p {
         margin-left: auto;
         margin-right: auto;
-    }
+    }   
 }
 
 /* GENERAL SECTIONS */
@@ -142,27 +129,6 @@ body {
     height: auto;
     display: block;
     border-radius: 6px;
-}
-
-.cta {
-    position: absolute;
-    top: 15%;
-    left: 60%;
-    transform: translateX(-10%);
-    color: #EDE9CF;
-    font-size: clamp(1.5rem, 3vw, 3rem);
-    font-weight: 700;
-    margin: 0 0 0.5rem 0;
-}
-
-.cta-sub {
-    position: absolute;
-    top: 30%;
-    left: 60%;
-    transform: translateX(-10%);
-    width: 40%;
-    color: #EDE9CF;
-    font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 /* TITLES */
@@ -194,8 +160,7 @@ body {
 .footer-col.right {
     column-width: flex;
     margin-left: auto;  /* skubber kolonnen til højre på brede skærme */
-    align-items: right;
-    text-align: left;
+    text-align: right; /* skubber teksten til højre */ 
     
     
 }
