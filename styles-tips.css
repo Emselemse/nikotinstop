@@ -161,7 +161,7 @@ body {
 }
 .footer-col.center {
     column-width: flex;
-    margin: auto;  
+    margin: center;  
     text-align: center; /* centrerer teksten i midter kolonnen */
     
 }
@@ -180,4 +180,9 @@ body {
         text-align: center;
         align-content: center;
     }
-}
+    .footer-col.right {
+    column-width: flex;
+    margin-left: right;  /* skubber kolonnen til højre på brede skærme */
+    text-align: center
+    } 
+} 
