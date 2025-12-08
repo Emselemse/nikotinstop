@@ -22,45 +22,45 @@ body {
 }
 
 .nav-links {
-    display: flex;
+    display: flex;           /* sætter det på række */ 
     gap: 30px;          /* afstanden i mellem teskten */
-    align-items: right;            
+    align-items: right;       /* sørger for at det er i midten */        
 }
 
-.nav-links a {
+.nav-links a {          /* selve teksten */ 
     color: #1A2D51;              /* farven på teskten */
-    font-size: 1.2rem;
+    font-size: 1.2rem;        /* størrelsen på teksten */
 }
 
 
 /* HERO */
-.hero {
-    display: flex;
-    width: 100%;
-    min-height: 60vh;
-}
+.hero {   
+    display: flex;                /* sætter det på række */
+    width: 100%;               /* fylder hele bredden */
+    min-height: 60vh;          /* minimum højde på hero sektionen */
+} 
 
 /* LEFT SIDE IMAGE */
 .hero-img {
-    flex: 1;
+    flex: 1;                 /* fylder lige så meget som teksten */
 }
 
 .hero-img img {
-    width: 100%;
-    height: 100%;
+    width: 100%;              /* fylder hele bredden */
+    height: 100%;           /* fylder hele højden */
     object-fit: cover;              /* det fulde billede er hele tiden vist og responsiv */
-    display: auto;
+    display: auto;        /* automatisk display */
 }
 
 /* RIGHT SIDE TEXT */
 .hero-text {
-    flex: 1;
-    background: #0f2c55;
-    color: #EDE9CF;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: clamp(1.5rem, 4vw, 4rem);
+    flex: 1;              /* fylder lige så meget som billedet */
+    background: #0f2c55;      /* baggrunds farven */
+    color: #EDE9CF;        /* tekst farven */
+    display: flex;         /* sætter det på række */
+    flex-direction: column;  /* sætter teksten under hinanden */
+    justify-content: center;  /* centrerer teksten lodret */
+    padding: clamp(1.5rem, 4vw, 4rem);  /* padding omkring teksten, responsiv */
 }
 
 .hero-text h2 {
@@ -84,17 +84,17 @@ body {
 
 .gray-box {         /* boksen*/
     width: 100%;
-    box-shadow: 2rem;
-    max-width: 1500px;
-    background: #E0BC61;
-    padding: 40px;
-    margin: 1.8rem auto;
-    border-radius: 3px;
-    font-size: 1.8rem;
+    box-shadow: 2rem;  /* skygge omkring boksen */
+    max-width: 1500px;   /* maks bredde på boksen */
+    background: #E0BC61;  /* gul farve */
+    padding: 40px;       /* padding inde i boksen */
+    margin: 1.8rem auto;     /* centrerer boksen */
+    border-radius: 3px;      /* rundede hjørner */
+    font-size: 1.8rem;        /* tekst størrelse i boksen */
 }
 .gray-box summary {
     font-size: 1.8rem;          /* titel */
-    font-weight: bold;
+    font-weight: bold;        /* gør teksten fed */
 }
 
 .gray-box p {
@@ -173,15 +173,15 @@ body {
 
 
 /* RESPONSIVT BREAKPOINT */
-@media (max-width: 600px) {
+@media (max-width: 600px) {                         
     .footer {
         flex-direction: column;      /* kolonner under hinanden */
-        text-align: center;
-        align-content: center;
+        text-align: center;     /* centrerer teksten i footeren */
+        align-content: center;     /* centrerer kolonnerne */
     }
-    .footer-col.right {
-    column-width: flex;
+    .footer-col.right {        /* højre kolonne i footeren */
+    column-width: flex;          /* gør kolonnen fleksibel */
     margin-left: right;             /* skubber kolonnen til højre på brede skærme */
-    text-align: center
+    text-align: center;        /* centrerer teksten i kolonnen */
     } 
 } 
