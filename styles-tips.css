@@ -17,7 +17,7 @@ body {
     padding: 1.5rem;                /* størrelse på selve nav baren */
     position: sticky;               /* bliver øverst på skærmen når man scroller */
     top: 0;                         /* toppen af skærmen */
-    right: 40px;                        
+    right: 40px;  
     z-index: 10;                    /* det forreste lag */
 }
 
