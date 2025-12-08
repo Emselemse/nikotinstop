@@ -14,7 +14,7 @@ body {
     display: flex;                  /* sætter det på række */
     justify-content: space-between; /* afstanden i mellem logo og tekst */
     align-items: center;            /* sørger for at det er i midten */
-    padding: 1rem 1.5rem;           /* størrelse på selve nav baren */
+    padding: 1.5rem;                /* størrelse på selve nav baren */
     position: sticky;               /* bliver øverst på skærmen når man scroller */
     top: 0;                         /* toppen af skærmen */
     z-index: 10;                    /* det forreste lag */
@@ -22,7 +22,8 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 30px;                      /* afstanden i mellem teskten */
+    gap: 30px;          /* afstanden i mellem teskten */
+    align-items: right;            
 }
 
 .nav-links a {
