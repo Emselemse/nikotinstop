@@ -2,37 +2,31 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* TOP MENU */
+/* Header */
 .logo {
-    max-width: 100%;
-    height: auto;
+    width: auto;
+    height: 60px; 
     padding-right: 700px;
 }
 .topnav {
-    width: 100%;
-    background: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-.logo {
-    max-width: 150px;
-    height: auto;
-    padding-right: 0;
+    width: flex;                    /* flex så den passer til alle skærme*/
+    background: rgb(255, 255, 255);
+    display: flex;                  /* sætter det på række */
+    justify-content: space-between; /* afstanden i mellem logo og tekst */
+    align-items: center;            /* sørger for at det er i midten */
+    padding: 1rem 1.5rem;           /* størrelse på selve nav baren */
+    position: sticky;               /* bliver øverst på skærmen når man scroller */
+    top: 0;                         /* toppen af skærmen */
+    z-index: 10;                    /* det forreste lag */
 }
 
 .nav-links {
     display: flex;
-    gap: 30px;
+    gap: 30px;                      /* afstanden i mellem teskten */
 }
 
 .nav-links a {
-    color: #1A2D51;
+    color: #1A2D51;              /* farven på teskten */
     font-size: 1.2rem;
     text-decoration: none;
 }
@@ -76,7 +70,7 @@ body {
 .hero-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* det fulde billede er hele tiden vist og responsiv */
+    object-fit: cover;              /* det fulde billede er hele tiden vist og responsiv */
     display: auto;
 }
 
@@ -84,7 +78,7 @@ body {
 .hero-text {
     flex: 1;
     background: #0f2c55;
-    color: #EDE9CF;/* light cream text*/
+    color: #EDE9CF;               /* light cream text*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,12 +115,12 @@ body {
     font-size: 1.8rem;
 }
 .gray-box summary {
-    font-size: 1.8rem;   /* titel */
+    font-size: 1.8rem;          /* titel */
     font-weight: bold;
 }
 
 .gray-box p {
-    font-size: 1rem;     /* text*/
+    font-size: 1rem;            /* text*/
     line-height: 1.4;
     margin-top: 1rem;
 }
@@ -181,21 +175,21 @@ body {
 
 .footer-col.right {
     column-width: flex;
-    margin-left: auto;  /* skubber kolonnen til højre på brede skærme */
-    text-align: right; /* skubber teksten til højre */ 
+    margin-left: auto;          /* skubber kolonnen til højre på brede skærme */
+    text-align: right;          /* skubber teksten til højre */ 
     
     
 }
 .footer-col.center {
     column-width: flex;
     margin: center;  
-    text-align: center; /* centrerer teksten i midter kolonnen */
+    text-align: center;         /* centrerer teksten i midter kolonnen */
     
 }
 .footer-col.left {
     column-width: flex;
     margin-right: auto;  
-    text-align: left; /* centrerer teksten til venstre i kolonnen */
+    text-align: left;           /* centrerer teksten til venstre i kolonnen */
     
 }
 
@@ -209,7 +203,7 @@ body {
     }
     .footer-col.right {
     column-width: flex;
-    margin-left: right;  /* skubber kolonnen til højre på brede skærme */
+    margin-left: right;             /* skubber kolonnen til højre på brede skærme */
     text-align: center
     } 
 } 
