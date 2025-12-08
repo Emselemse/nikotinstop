@@ -30,29 +30,6 @@ body {
     font-size: 1.2rem;
 }
 
-/* Mobile */
-@media (max-width: 820px) {
-    .topnav {
-        flex-direction: row;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        gap: 15px;
-    }
-
-    .nav-links.open {
-        display: flex;
-    }
-}
-
 
 /* HERO */
 .hero {
