@@ -4,62 +4,92 @@ body {
     background: #FFFBEE;
     color: #1A2D51;
 }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,       /* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)*/
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+body {
+    font-family: Arial, sans-serif;  /* skrifttype */            
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 
 /* Header */
 .logo {
-    width: auto;
-    height: 60px; 
-    padding-right: 700px;
+    width: auto;                 /* flex så den passer til alle skærme*/                                                                                                   
+    height: 60px;                /* højde på logoet */
+    padding-right: 700px;        /* afstand til teksten */
 }
 
 .topnav {
-    width: 100%;
-    background: rgb(255, 255, 255);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem;
-    position: sticky;
-    top: 0;
-    right: 40px;
-    z-index: 10;
+    width: 100%;                /* flex så den passer til alle skærme*/
+    background: white;
+    display: flex;                /* sætter det på række */ 
+    justify-content: space-between; /* afstanden i mellem logo og tekst */                       
+    align-items: center;           /* sørger for at det er i midten */
+    padding: 1.2rem;              /* størrelse på selve nav baren */
+    position: sticky;            /* bliver øverst på skærmen når man scroller */    
+    top: 0;                       /* toppen af skærmen */
+    right: 40px;                
+    z-index: 10;                 /* det forreste lag */
 }
 
 .nav-links {
-    display: flex;
-    gap: 30px;
-    align-items: center;      
-}
+    display: flex;        /* sætter det på række */
+    gap: 30px;        /* afstanden i mellem teskten */
+    align-items: center;         /* sørger for at det er i midten */
+} 
 
 .nav-links a {
-    color: #1A2D51;
-    font-size: 1.2rem;
+    color: #1A2D51;             /* farven på teskten */
+    font-size: 1.2rem;       /* størrelsen på teksten */
 }
 
 /* HERO */
 .hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 4rem 2rem;
-    background: #1A2D51;
-    color: #EDE9CF;
-    gap: 2rem;
+    display: grid;             /* sætter det på række */
+    grid-template-columns: 1fr 1fr; /* to lige store kolonner */
+    padding: 4rem 2rem;         /* afstand omkring hero sektionen */
+    background: #1A2D51;          /* baggrunds farve */
+    color: #EDE9CF;            /* tekst farve */
+    gap: 2rem;                  /* afstand mellem kolonnerne */
 }
 
 .hero-text {
-    flex: 1;
-    min-width: 320px;
-    background: #1A2D51;
-    color: #EDE9CF;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: clamp(1.5rem, 4vw, 4rem);
+    flex: 1;                /* fylder lige så meget som billedet */
+    min-width: 320px;        /* minimum bredde for teksten */
+    background: #1A2D51;         /* baggrunds farve */
+    color: #EDE9CF;           /* tekst farve */
+    display: flex;              /* sætter det på række */
+    flex-direction: column;     /* sætter det i kolonne */
+    justify-content: center;    /* centrerer indholdet lodret */
+    align-items: center;       /* centrerer indholdet horisontalt */
+    text-align: center;        /* centrerer teksten */
+    padding: clamp(1.5rem, 4vw, 4rem); /* responsiv padding */
 }
 
-.hero-text h1 {
+.hero-text h1 { 
     font-size: 3rem;
     margin: 0;
 }
@@ -84,7 +114,15 @@ body {
     font-size: 1.5rem;
     text-decoration: none;
     font-weight: bold;
+    transition: all 0.3s ease; /* Smooth hover animation */
 }
+
+.tilmelding-btn:hover {
+    background: #E0BC61; /* farver knappen på hover */
+    color: #ffffff;  /* farven på teksten på hover */
+}
+
+
 
 .hero-image {
     width: 100%;
