@@ -129,7 +129,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 .gray-box p {                       
-    font-size: 1rem;            /* text*/
+    font-size: 20px;            /* text*/
     line-height: 1.4;               
     margin-top: 1rem;
 }
