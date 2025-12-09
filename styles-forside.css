@@ -43,7 +43,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 .topnav {
-    width: 100%;                /* flex så den passer til alle skærme*/
+    width: flex;                /* flex så den passer til alle skærme*/
     background: white;
     display: flex;                /* sætter det på række */ 
     justify-content: space-between; /* afstanden i mellem logo og tekst */                       
