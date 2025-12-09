@@ -95,20 +95,20 @@ footer, header, hgroup, menu, nav, section {
 }
 
 .hero-text h2 {
-    font-size: clamp(1.5rem, 3vw, 2.5rem);
-    margin-bottom: 1rem;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);  /* responsiv størrelse */
+    margin-bottom: 1rem;  /* afstand under overskriften */
 }
-
-.hero-text h1 {
-    font-size: clamp(1.8rem, 4vw, 3rem);
-    font-weight: 700;
-    margin-bottom: 1rem;
+ 
+.hero-text h1 {  
+    font-size: clamp(1.8rem, 4vw, 3rem);  /* responsiv størrelse */
+    font-weight: 700;     /* gør teksten fed */
+    margin-bottom: 1rem;  /* afstand under overskriften */
 }
 
 .hero-text p {
-    font-size: clamp(1rem, 1.5vw, 1.2rem);
-    max-width: 32ch;
-    line-height: 1.5;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);  /* responsiv størrelse */
+    max-width: 32ch;       /* maks bredde på teksten */
+    line-height: 1.5;             /* linje højde */
 }
 
 
@@ -137,7 +137,7 @@ footer, header, hgroup, menu, nav, section {
 
 
 /* MOBILE STACKING */
-@media (max-width: 820px) {
+@media (max-width: 820px) {         /* når skærmen er mindre end 820px (media query) */
 
     .hero {
         flex-direction: column;     /*skubber text of billede under hindanen*/
@@ -149,18 +149,18 @@ footer, header, hgroup, menu, nav, section {
     }
 
     .hero-img img {
-        height: auto;
-        object-fit: contain;
+        height: auto;              /* automatisk højde */
+        object-fit: contain;       /* det fulde billede er hele tiden vist og responsiv */
     }
 
-    .hero-text {
-        padding: 2rem 1.5rem;
-        text-align: center;
+    .hero-text {    
+        padding: 2rem 1.5rem;       /* padding omkring teksten */
+        text-align: center;         /* centrerer teksten */
     }
 
     .hero-text p {
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: auto;         /* centrerer teksten */
+        margin-right: auto;         
     }   
 }
 /* FOOTER */
@@ -204,7 +204,7 @@ footer, header, hgroup, menu, nav, section {
 
 
 /* RESPONSIVT BREAKPOINT */
-@media (max-width: 600px) {                         
+@media (max-width: 600px) {            /* når skærmen er mindre end 600px (media query) */           
     .footer {
         flex-direction: column;      /* kolonner under hinanden */
         text-align: center;     /* centrerer teksten i footeren */
