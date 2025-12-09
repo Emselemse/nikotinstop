@@ -130,24 +130,24 @@ footer, header, hgroup, menu, nav, section {
 }
 
 .hero-image-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex;             /* sætter det på række */
+    justify-content: center;  /* centrerer billedet horisontalt */
+    align-items: center;     /* centrerer billedet lodret */
 }
 
 /* CARDS */
 .cards {
-    padding: 4rem 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    padding: 4rem 2rem;                                                     /* afstand omkring kort sektionen */
+    display: grid;                                                         /* bruger grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));          /* responsivt grid med minimum bredde på 280px */
+    gap: 2rem;                                                            /* afstand mellem kortene */
 }
 
 .card {
-    background: #E0BC61;
-    color: #1A2D8E;
-    border-radius: 15px;
-    padding: 2rem;
+    background: #E0BC61;         /* baggrunds farve */
+    color: #1A2D8E;          /* tekst farve */
+    border-radius: 15px;      /* rundede hjørner */
+    padding: 2rem;           /* afstand inden i kortet */
 }
 
 .card h2 {
@@ -171,12 +171,12 @@ footer, header, hgroup, menu, nav, section {
 
 /* FOOTER */
 .footer {
-    max-width: 100%;
-    background: #004076;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1rem;
+    max-width: flex;        /* maks bredde på footeren */
+    background: #004076;  /* baggrunds farven */
+    display: flex;            /* sætter det på række */
+    flex-wrap: wrap;  /* gør det muligt at bryde linjen */
+    justify-content: space-between;  /* afstanden i mellem kolonnerne */
+    padding: 1rem;      /* padding omkring footeren */
     color: white;
     font-size: 1.2rem;
 }

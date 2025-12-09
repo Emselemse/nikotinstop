@@ -120,7 +120,7 @@ footer, header, hgroup, menu, nav, section {
     background: #E0BC61;  /* gul farve */
     padding: 40px;       /* padding inde i boksen */
     margin: 1.8rem auto;     /* centrerer boksen */
-    border-radius: 3px;      /* rundede hjørner */
+    border-radius: 15px;      /* rundede hjørner */
     font-size: 1.8rem;        /* tekst størrelse i boksen */
 }
 .gray-box summary {
@@ -165,7 +165,7 @@ footer, header, hgroup, menu, nav, section {
 }
 /* FOOTER */
 .footer {
-    max-width: 100%;         /* maks bredde på footeren */
+    max-width: flex;         /* maks bredde på footeren */
     background: #004076;    /* baggrunds farven */
     display: flex;              /* sætter det på række */
     flex-wrap: wrap;        /* gør det muligt at bryde linjen */
