@@ -1,13 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-
-    /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
+    margin: 0;
+    background: #FFFBEE;
+    color: #1A2D51;
+}
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,       /* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)*/
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -27,33 +25,16 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
+
+body {
+    font-family: Arial, sans-serif;  /* skrifttype */            
+}
+/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-    padding: 0;
-    margin: 0; 
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-}
 
-/* Header */
 /* Header */
 .logo {
     width: auto;
@@ -90,9 +71,8 @@ table {
 }
 
 /* MOBILE LAYOUT */
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 
-    /* hide desktop links */
     .desktop-links {  
         display: none; /* skjuler desktop links */
     }
@@ -228,6 +208,7 @@ table {
         margin-right: auto;
     }   
 }
+
 /* FOOTER */
 .footer {
     max-width: 100%;

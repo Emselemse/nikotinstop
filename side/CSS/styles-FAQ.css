@@ -1,0 +1,182 @@
+/* BASIC RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif, sans-serif;
+    background: #FFFBEE;
+    color: black;
+    line-height: 1.4;
+}
+
+/* Header */
+.logo {
+    width: auto;
+    height: 60px;
+    padding-right: 700px;
+}
+
+.topnav {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #1A2D51;
+    font-size: 1.2rem;
+}
+
+/* HIDE mobile version on desktop */
+.mobile-menu,
+.mobile-links {
+    display: none;
+}
+
+/* MOBILE LAYOUT */
+@media (max-width: 700px) {
+
+    /* hide desktop links */
+    .desktop-links {
+        display: none;
+    }
+
+    /* show mobile menu */
+    .mobile-menu {
+        display: block;
+        margin-left: auto;
+    }
+
+    .mobile-menu summary {
+        cursor: pointer;
+        font-size: 1.2rem;
+        background: #f1f1f1;
+        padding: 0.6rem 1rem;
+        border-radius: 6px;
+    }
+
+    .mobile-links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background: #fafafa;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-top: 0.5rem;
+    }
+
+    .logo {
+        padding-right: 0; /* prevents large gap */
+        height: 55px;
+    }
+
+}
+/* HERO */
+.hero {
+    background: #1A2D51;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    color: #FFFBEE;
+    font-size: clamp(40px, 6vw, 96px);
+    font-weight: 600;
+}
+
+/* FAQ BLOCKS */
+.faq-list {
+    display: grid;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.faq-block {
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.faq-block h2 {
+    font-size: clamp(26px, 4vw, 40px);
+    margin-bottom: 20px;
+}
+
+.faq-block p {
+    font-size: clamp(20px, 3vw, 28px);
+}
+
+.dark {
+    background: #E0BC61;
+}
+
+.light {
+    background: #F2D281;
+}
+
+/* FOOTER */
+.footer {
+    max-width: flex;         /* maks bredde på footeren */
+    background: #004076;    /* baggrunds farven */
+    display: flex;              /* sætter det på række */
+    flex-wrap: wrap;        /* gør det muligt at bryde linjen */
+    justify-content: space-between;  /* afstanden i mellem kolonnerne */
+    padding: 1rem;            /* padding omkring footeren */
+    color: white;          /* tekst farven */
+    font-size: 1.2rem;        /* tekst størrelse i footeren */
+}
+
+.footer-col  {
+    flex: 1;                                            
+    min-width: 200px;                                   
+    margin: 1rem 0;
+    align-self: center;
+}
+
+.footer-col.right {
+    column-width: flex;         /* gør kolonnen fleksibel */
+    margin-left: auto;          /* skubber kolonnen til højre på brede skærme */
+    text-align: right;          /* skubber teksten til højre */ 
+    
+    
+}
+.footer-col.center {
+    column-width: flex;         
+    margin: center;                 
+    text-align: center;         /* centrerer teksten i midter kolonnen */
+    
+}
+.footer-col.left {
+    column-width: flex; 
+    margin-right: auto;  
+    text-align: left;           /* centrerer teksten til venstre i kolonnen */
+    
+}
+
+
+/* RESPONSIVT BREAKPOINT */
+@media (max-width: 700px) {            /* når skærmen er mindre end 600px (media query) */           
+    .footer {
+        flex-direction: column;      /* kolonner under hinanden */
+        text-align: center;     /* centrerer teksten i footeren */
+        align-content: center;     /* centrerer kolonnerne */
+    }
+    .footer-col.right {        /* højre kolonne i footeren */
+    column-width: flex;          /* gør kolonnen fleksibel */
+    margin-left: right;             /* skubber kolonnen til højre på brede skærme */
+    text-align: center;        /* centrerer teksten i kolonnen */
+    } 
+} 
