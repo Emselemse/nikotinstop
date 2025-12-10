@@ -179,6 +179,10 @@ footer, header, hgroup, menu, nav, section {
     margin-top: 1rem;
 }
 
+.gray-box strong {
+ font-weight: bold;
+}
+
 
 
 /* MOBILE STACKING */
