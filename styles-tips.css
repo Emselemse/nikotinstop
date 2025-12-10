@@ -60,21 +60,21 @@ table {
     padding-right: 700px;
 }
 .topnav {
-    width: flex;                    /* flex så den passer til alle skærme*/
+    width: flex;                    /* Flex så den passer til alle skærme*/
     background: rgb(255, 255, 255);
-    display: flex;                  /* sætter det på række */
-    justify-content: space-between; /* afstanden i mellem logo og tekst */
-    align-items: center;            /* sørger for at det er i midten */
-    padding: 1.5rem;                /* størrelse på selve nav baren */
-    position: sticky;               /* bliver øverst på skærmen når man scroller */
-    top: 0;                         /* toppen af skærmen */
+    display: flex;                  /* Sætter det på række */
+    justify-content: space-between; /* Afstanden imellem logo og tekst */
+    align-items: center;            /* Sørger for at det er i midten */
+    padding: 1.5rem;                /* Er størrelse på selve nav baren */
+    position: sticky;               /* Sørger for at det bliver øverst på skærmen når man scroller */
+    top: 0;                         /* Er toppen af skærmen */
     right: 40px;  
-    z-index: 10;                    /* det forreste lag */
+    z-index: 10;                    /* Er det forreste lag */
 }
 
 .nav-links {
-    display: flex;           /* sætter det på række */ 
-    gap: 30px;          /* afstanden i mellem teskten */
+    display: flex;           /* Sætter det på række */ 
+    gap: 30px;          /* Er afstanden imellem teskten */
     align-items: right;       /* sørger for at det er i midten */        
 }
 
