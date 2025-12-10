@@ -54,33 +54,78 @@ table {
 }
 
 /* Header */
+/* Header */
 .logo {
     width: auto;
-    height: 60px; 
+    height: 60px;
     padding-right: 700px;
 }
+
 .topnav {
-    width: flex;                    /* Flex så den passer til alle skærme*/
-    background: rgb(255, 255, 255);
-    display: flex;                  /* Sætter det på række */
-    justify-content: space-between; /* Afstanden imellem logo og tekst */
-    align-items: center;            /* Sørger for at det er i midten */
-    padding: 1.5rem;                /* Er størrelse på selve nav baren */
-    position: sticky;               /* Sørger for at det bliver øverst på skærmen når man scroller */
-    top: 0;                         /* Er toppen af skærmen */
-    right: 40px;  
-    z-index: 10;                    /* Er det forreste lag */
+    background: white;  
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .nav-links {
-    display: flex;           /* Sætter det på række */ 
-    gap: 30px;          /* Er afstanden imellem teskten */
-    align-items: right;       /* sørger for at det er i midten */        
+    display: flex;
+    gap: 30px;
+    align-items: center;
 }
 
-.nav-links a {          /* selve teksten */ 
-    color: #1A2D51;              /* farven på teskten */
-    font-size: 1.2rem;        /* størrelsen på teksten */
+.nav-links a {
+    color: #1A2D51;
+    font-size: 1.2rem;
+}
+
+/* HIDE mobile version on desktop */
+.mobile-menu,
+.mobile-links {
+    display: none;  /* skjuler mobile version  */
+}
+
+/* MOBILE LAYOUT */
+@media (max-width: 700px) {
+
+    /* hide desktop links */
+    .desktop-links {  
+        display: none; /* skjuler desktop links */
+    }
+
+    /* show mobile menu */
+    .mobile-menu {
+        display: block; /* viser mobile menu */
+        margin-left: auto; /* skubber menuen til højre */
+    }
+
+    .mobile-menu summary {
+        cursor: pointer;  /* gør cursor til pointer */
+        font-size: 1.2rem;  /* størrelse på teksten */
+        background: #f1f1f1; /* baggrunds farven */
+        padding: 0.6rem 1rem; /* padding omkring teksten */
+        border-radius: 6px; /* rundede hjørner */
+    }
+
+    .mobile-links {
+        display: flex;             /* viser mobile links */
+        flex-direction: column;   /* sætter links under hinanden */
+        gap: 15px;                 /* afstand mellem links */
+        background: #fafafa;       /* baggrunds farven */
+        padding: 1rem;            /* padding omkring links */
+        border-radius: 8px;        /* rundede hjørner */
+        margin-top: 0.5rem;      /* afstand over links */
+    }
+
+    .logo {
+        padding-right: 0; /* prevents large gap */
+        height: 55px;  /* justerer logo højde */
+    }
+
 }
 
 
@@ -224,7 +269,7 @@ table {
 
 
 /* RESPONSIVT BREAKPOINT */
-@media (max-width: 600px) {                         
+@media (max-width: 700px) {            /* når skærmen er mindre end 600px (media query) */           
     .footer {
         flex-direction: column;      /* kolonner under hinanden */
         text-align: center;     /* centrerer teksten i footeren */

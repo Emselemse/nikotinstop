@@ -36,31 +36,75 @@ footer, header, hgroup, menu, nav, section {
 /* Header */
 .logo {
     width: auto;
-    height: 60px; 
+    height: 60px;
     padding-right: 700px;
 }
+
 .topnav {
-    width: flex;                    /* flex så den passer til alle skærme*/
-    background: rgb(255, 255, 255);
-    display: flex;                  /* sætter det på række */
-    justify-content: space-between; /* afstanden i mellem logo og tekst */
-    align-items: center;            /* sørger for at det er i midten */
-    padding: 1.5rem;                /* størrelse på selve nav baren */
-    position: sticky;               /* bliver øverst på skærmen når man scroller */
-    top: 0;                         /* toppen af skærmen */
-    right: 40px;
-    z-index: 10;                    /* det forreste lag */
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
-.nav-links {                  /* selve teksten containeren */
-    display: flex;           /* sætter det på række */ 
-    gap: 30px;          /* afstanden i mellem teskten */
-    align-items: right;       /* sørger for at det er i midten */        
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
 }
 
-.nav-links a {          /* selve teksten */ 
-    color: #1A2D51;              /* farven på teskten */
-    font-size: 1.2rem;        /* størrelsen på teksten */
+.nav-links a {
+    color: #1A2D51;
+    font-size: 1.2rem;
+}
+
+/* HIDE mobile version on desktop */
+.mobile-menu,
+.mobile-links {
+    display: none;
+}
+
+/* MOBILE LAYOUT */
+@media (max-width: 700px) {
+
+    /* hide desktop links */
+    .desktop-links {
+        display: none;
+    }
+
+    /* show mobile menu */
+    .mobile-menu {
+        display: block;
+        margin-left: auto;
+    }
+
+    .mobile-menu summary {
+        cursor: pointer;
+        font-size: 1.2rem;
+        background: #f1f1f1;
+        padding: 0.6rem 1rem;
+        border-radius: 6px;
+    }
+
+    .mobile-links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background: #fafafa;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-top: 0.5rem;
+    }
+
+    .logo {
+        padding-right: 0; /* prevents large gap */
+        height: 55px;
+    }
+
 }
 
 
@@ -119,7 +163,7 @@ footer, header, hgroup, menu, nav, section {
     max-width: 1500px;   /* maks bredde på boksen */
     background: #E0BC61;  /* gul farve */
     padding: 40px;       /* padding inde i boksen */
-    margin: 1.8rem auto;     /* centrerer boksen */
+    margin: 1.5rem auto;     /* centrerer boksen */
     border-radius: 15px;      /* rundede hjørner */
     font-size: 1.8rem;        /* tekst størrelse i boksen */
 }
@@ -204,7 +248,7 @@ footer, header, hgroup, menu, nav, section {
 
 
 /* RESPONSIVT BREAKPOINT */
-@media (max-width: 600px) {            /* når skærmen er mindre end 600px (media query) */           
+@media (max-width: 700px) {            /* når skærmen er mindre end 600px (media query) */           
     .footer {
         flex-direction: column;      /* kolonner under hinanden */
         text-align: center;     /* centrerer teksten i footeren */

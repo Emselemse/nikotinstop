@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    background: #FFFBEE;
+    color: black;
+}
+
+/* Header */
+.logo {
+    width: auto;
+    height: 60px;
+    padding-right: 700px;
+}
+
+.topnav {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #1A2D51;
+    font-size: 1.2rem;
+}
+
+/* gemmer menuen når skærmen er stor nok */
+.mobile-menu,
+.mobile-links {
+    display: none;
+}
+
+/* gør headeren responsiv */
+@media (max-width: 700px) {
+
+    /* hide desktop links */
+    .desktop-links {
+        display: none;
+    }
+
+    /* show mobile menu */
+    .mobile-menu {
+        display: block;
+        margin-left: auto;
+    }
+
+    .mobile-menu summary {
+        cursor: pointer;
+        font-size: 1.2rem;
+        background: #f1f1f1;
+        padding: 0.6rem 1rem;
+        border-radius: 6px;
+    }
+
+    .mobile-links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background: #fafafa;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-top: 0.5rem;
+    }
+
+    .logo {
+        padding-right: 0; /* prevents large gap */
+        height: 55px;
+    }
+
+}
+
+/* HERO */
+.hero {
+    background: #1A2D51;
+    padding: 120px 134px 80px;
+    color: #FFFBEE;
+}
+
+.hero h1 {
+    font-size: 74px;
+    font-weight: 800;
+    margin: 0 0 30px;
+}
+
+.hero p {
+    font-size: 40px;
+    max-width: 1187px;
+}
+
+/* MAIN CONTENT */
+.content-block {
+    padding: 60px 134px;
+    font-size: 40px;
+    line-height: 55px;
+    max-width: 1268px;
+}
+
+/* TWO-COLUMN SECTIONS */
+.two-column {
+    display: flex;
+    gap: 60px;
+    padding: 80px 134px;
+    align-items: flex-start;
+}
+
+.two-column.reverse {
+    flex-direction: row-reverse;
+}
+
+.column {
+    max-width: 840px;
+}
+
+.column h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.column p {
+    font-size: 40px;
+    line-height: 55px;
+}
+
+.side-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* FOOTER */
+.footer {
+    max-width: flex;         /* maks bredde på footeren */
+    background: #004076;    /* baggrunds farven */
+    display: flex;              /* sætter det på række */
+    flex-wrap: wrap;        /* gør det muligt at bryde linjen */
+    justify-content: space-between;  /* afstanden i mellem kolonnerne */
+    padding: 1rem;            /* padding omkring footeren */
+    color: white;          /* tekst farven */
+    font-size: 1.2rem;        /* tekst størrelse i footeren */
+}
+
+.footer-col  {
+    flex: 1;                                            
+    min-width: 200px;                                   
+    margin: 1rem 0;
+    align-self: center;
+}
+
+.footer-col.right {
+    column-width: flex;         /* gør kolonnen fleksibel */
+    margin-left: auto;          /* skubber kolonnen til højre på brede skærme */
+    text-align: right;          /* skubber teksten til højre */ 
+    
+    
+}
+.footer-col.center {
+    column-width: flex;         
+    margin: center;                 
+    text-align: center;         /* centrerer teksten i midter kolonnen */
+    
+}
+.footer-col.left {
+    column-width: flex; 
+    margin-right: auto;  
+    text-align: left;           /* centrerer teksten til venstre i kolonnen */
+    
+}
+
+/* gør footeren responsiv*/
+@media (max-width: 700px) {            /* når skærmen er mindre end 600px (media query) */           
+    .footer {
+        flex-direction: column;      /* kolonner under hinanden */
+        text-align: center;     /* centrerer teksten i footeren */
+        align-content: center;     /* centrerer kolonnerne */
+    }
+    .footer-col.right {        /* højre kolonne i footeren */
+    column-width: flex;          /* gør kolonnen fleksibel */
+    margin-left: right;             /* skubber kolonnen til højre på brede skærme */
+    text-align: center;        /* centrerer teksten i kolonnen */
+    } 
+} 
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+
+/*responsive design*/
+@media (max-width: 700px) {
+
+    /* General text adjustments */
+    body {
+        font-size: 16px;
+    }
+
+    /* HERO shrinks spacing + text */
+    .hero {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 22px;
+    }
+
+    /* CONTENT */
+    .content-block {
+        padding: 30px 20px;
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    /* TWO-COLUMN collapses to one column */
+    .two-column,
+    .two-column.reverse {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 20px;
+    }
+
+    .column h2 {
+        font-size: 32px;
+    }
+
+    .column p {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .side-image {
+        width: 100%;
+    }
+}

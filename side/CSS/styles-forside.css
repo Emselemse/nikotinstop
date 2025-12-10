@@ -37,33 +37,76 @@ footer, header, hgroup, menu, nav, section {
 
 /* Header */
 .logo {
-    width: auto;                 /* flex så den passer til alle skærme*/                                                                                                   
-    height: 60px;                /* højde på logoet */
-    padding-right: 700px;        /* afstand til teksten */
+    width: auto;
+    height: 60px;
+    padding-right: 700px;
 }
 
 .topnav {
-    width: flex;                /* flex så den passer til alle skærme*/
     background: white;
-    display: flex;                /* sætter det på række */ 
-    justify-content: space-between; /* afstanden i mellem logo og tekst */                       
-    align-items: center;           /* sørger for at det er i midten */
-    padding: 1.2rem;              /* størrelse på selve nav baren */
-    position: sticky;            /* bliver øverst på skærmen når man scroller */    
-    top: 0;                       /* toppen af skærmen */
-    right: 40px;                
-    z-index: 10;                 /* det forreste lag */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .nav-links {
-    display: flex;        /* sætter det på række */
-    gap: 30px;        /* afstanden i mellem teskten */
-    align-items: center;         /* sørger for at det er i midten */
-} 
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
 
 .nav-links a {
-    color: #1A2D51;             /* farven på teskten */
-    font-size: 1.2rem;       /* størrelsen på teksten */
+    color: #1A2D51;
+    font-size: 1.2rem;
+}
+
+/* HIDE mobile version on desktop */
+.mobile-menu,
+.mobile-links {
+    display: none;
+}
+
+/* MOBILE LAYOUT */
+@media (max-width: 700px) {
+
+    /* hide desktop links */
+    .desktop-links {
+        display: none;
+    }
+
+    /* show mobile menu */
+    .mobile-menu {
+        display: block;
+        margin-left: auto;
+    }
+
+    .mobile-menu summary {
+        cursor: pointer;
+        font-size: 1.2rem;
+        background: #f1f1f1;
+        padding: 0.6rem 1rem;
+        border-radius: 6px;
+    }
+
+    .mobile-links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background: #fafafa;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-top: 0.5rem;
+    }
+
+    .logo {
+        padding-right: 0; /* prevents large gap */
+        height: 55px;
+    }
+
 }
 
 /* HERO */
@@ -204,7 +247,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 /* RESPONSIVE FOOTER */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .footer {
         flex-direction: column;
         text-align: center;
