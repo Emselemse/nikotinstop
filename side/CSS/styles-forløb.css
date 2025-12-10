@@ -177,6 +177,10 @@ footer, header, hgroup, menu, nav, section {
     line-height: 1.4;               
     margin-top: 1rem;
 }
+.gray-box strong {                       
+    font-weight: bold;
+}
+
 
 
 
