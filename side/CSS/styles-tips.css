@@ -254,7 +254,7 @@ footer, header, hgroup, menu, nav, section {
 
 
 /* RESPONSIVT BREAKPOINT */
-@media (max-width: 700px) {            /* når skærmen er mindre end 600px (media query) */           
+@media (max-width: 700px) {            /* når skærmen er mindre end 700px (media query) */           
     .footer {
         flex-direction: column;      /* kolonner under hinanden */
         text-align: center;     /* centrerer teksten i footeren */
