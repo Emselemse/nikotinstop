@@ -212,19 +212,20 @@ footer, header, hgroup, menu, nav, section {
     font-weight: bold;
 }
 
+
 /* FOOTER */
 .footer {
-    max-width: flex;        /* maks bredde på footeren */
-    background: #004076;  /* baggrunds farven */
-    display: flex;            /* sætter det på række */
-    flex-wrap: wrap;  /* gør det muligt at bryde linjen */
-    justify-content: space-between;  /* afstanden i mellem kolonnerne */
-    padding: 1rem;      /* padding omkring footeren */
+    max-width: 100%;
+    background: #004076;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
     color: white;
     font-size: 1.2rem;
 }
 
-.footer-col {
+.footer-col  {
     flex: 1;
     min-width: 200px;
     margin: 1rem 0;
@@ -232,30 +233,36 @@ footer, header, hgroup, menu, nav, section {
 }
 
 .footer-col.right {
-    margin-left: auto;
-    text-align: right;
+    column-width: flex;
+    margin-left: auto;          /* skubber kolonnen til højre på brede skærme */
+    text-align: right;          /* skubber teksten til højre */ 
+    
+    
 }
-
 .footer-col.center {
-    margin: 0 auto;
-    text-align: center;
+    column-width: flex;
+    margin: center;  
+    text-align: center;         /* centrerer teksten i midter kolonnen */
+    
 }
-
 .footer-col.left {
-    margin-right: auto;
-    text-align: left;
+    column-width: flex;
+    margin-right: auto;  
+    text-align: left;           /* centrerer teksten til venstre i kolonnen */
+    
 }
 
-/* RESPONSIVE FOOTER */
-@media (max-width: 700px) {
+
+/* RESPONSIVT BREAKPOINT */
+@media (max-width: 700px) {            /* når skærmen er mindre end 600px (media query) */           
     .footer {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
+        flex-direction: column;      /* kolonner under hinanden */
+        text-align: center;     /* centrerer teksten i footeren */
+        align-content: center;     /* centrerer kolonnerne */
     }
-
-    .footer-col {
-        margin: 0.5rem 0;
-        text-align: center;
-    }
-}
+    .footer-col.right {        /* højre kolonne i footeren */
+    column-width: flex;          /* gør kolonnen fleksibel */
+    margin-left: right;             /* skubber kolonnen til højre på brede skærme */
+    text-align: center;        /* centrerer teksten i kolonnen */
+    } 
+} 
