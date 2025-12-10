@@ -1,11 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    background: #FFFBEE;
-    color: #1A2D51;
-}
+
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,       /* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)*/
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -24,13 +26,31 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-body {
-    font-family: Arial, sans-serif;  /* skrifttype */            
-}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
+}
+body {
+	line-height: 1;
+    padding: 0;
+    margin: 0; 
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 }
 
 /* Header */
@@ -140,20 +160,20 @@ footer, header, hgroup, menu, nav, section {
 }
 
 .hero-text h2 {
-    font-size: clamp(1.5rem, 3vw, 2.5rem);  /* responsiv størrelse */
-    margin-bottom: 1rem;  /* afstand under overskriften */
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    margin-bottom: 1rem;
 }
- 
-.hero-text h1 {  
-    font-size: clamp(1.8rem, 4vw, 3rem);  /* responsiv størrelse */
-    font-weight: 700;     /* gør teksten fed */
-    margin-bottom: 1rem;  /* afstand under overskriften */
+
+.hero-text h1 {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 .hero-text p {
-    font-size: clamp(1rem, 1.5vw, 1.2rem);  /* responsiv størrelse */
-    max-width: 32ch;       /* maks bredde på teksten */
-    line-height: 1.5;             /* linje højde */
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    max-width: 32ch;
+    line-height: 1.5;
 }
 
 
@@ -165,7 +185,7 @@ footer, header, hgroup, menu, nav, section {
     background: #E0BC61;  /* gul farve */
     padding: 40px;       /* padding inde i boksen */
     margin: 1.8rem auto;     /* centrerer boksen */
-    border-radius: 15px;      /* rundede hjørner */
+    border-radius: 3px;      /* rundede hjørner */
     font-size: 1.8rem;        /* tekst størrelse i boksen */
 }
 .gray-box summary {
@@ -173,75 +193,75 @@ footer, header, hgroup, menu, nav, section {
     font-weight: bold;        /* gør teksten fed */
 }
 
-.gray-box p {                       
+.gray-box p {
     font-size: 1rem;            /* text*/
-    line-height: 1.4;               
+    line-height: 1.4;
     margin-top: 1rem;
 }
 
 
 
 /* MOBILE STACKING */
-@media (max-width: 820px) {         /* når skærmen er mindre end 820px (media query) */
+@media (max-width: 820px) {
 
     .hero {
         flex-direction: column;     /*skubber text of billede under hindanen*/
     }
 
     .hero-img {
-        width: 100%;                    
+        width: 100%;
         height: auto;
     }
 
     .hero-img img {
-        height: auto;              /* automatisk højde */
-        object-fit: contain;       /* det fulde billede er hele tiden vist og responsiv */
+        height: auto;
+        object-fit: contain;
     }
 
-    .hero-text {    
-        padding: 2rem 1.5rem;       /* padding omkring teksten */
-        text-align: center;         /* centrerer teksten */
+    .hero-text {
+        padding: 2rem 1.5rem;
+        text-align: center;
     }
 
     .hero-text p {
-        margin-left: auto;         /* centrerer teksten */
-        margin-right: auto;         
+        margin-left: auto;
+        margin-right: auto;
     }   
 }
 /* FOOTER */
 .footer {
-    max-width: flex;         /* maks bredde på footeren */
-    background: #004076;    /* baggrunds farven */
-    display: flex;              /* sætter det på række */
-    flex-wrap: wrap;        /* gør det muligt at bryde linjen */
-    justify-content: space-between;  /* afstanden i mellem kolonnerne */
-    padding: 1rem;            /* padding omkring footeren */
-    color: white;          /* tekst farven */
-    font-size: 1.2rem;        /* tekst størrelse i footeren */
+    max-width: 100%;
+    background: #004076;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+    color: white;
+    font-size: 1.2rem;
 }
 
 .footer-col  {
-    flex: 1;                                            
-    min-width: 200px;                                   
+    flex: 1;
+    min-width: 200px;
     margin: 1rem 0;
     align-self: center;
 }
 
 .footer-col.right {
-    column-width: flex;         /* gør kolonnen fleksibel */
+    column-width: flex;
     margin-left: auto;          /* skubber kolonnen til højre på brede skærme */
     text-align: right;          /* skubber teksten til højre */ 
     
     
 }
 .footer-col.center {
-    column-width: flex;         
-    margin: center;                 
+    column-width: flex;
+    margin: center;  
     text-align: center;         /* centrerer teksten i midter kolonnen */
     
 }
 .footer-col.left {
-    column-width: flex; 
+    column-width: flex;
     margin-right: auto;  
     text-align: left;           /* centrerer teksten til venstre i kolonnen */
     
