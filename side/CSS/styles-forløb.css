@@ -158,7 +158,7 @@ footer, header, hgroup, menu, nav, section {
 
 
 .gray-box {         /* boksen*/
-    width: 100%;
+    width: auto;
     box-shadow: 2rem;  /* skygge omkring boksen */
     max-width: 1500px;   /* maks bredde på boksen */
     background: #E0BC61;  /* gul farve */
