@@ -168,14 +168,41 @@ footer, header, hgroup, menu, nav, section {
 
 
 .hero-image {
-    width: 100%;
+    width: auto;
     border-radius: 8px;
 }
 
 .hero-image-wrap {
     display: flex;             /* sætter det på række */
-    justify-content: center;  /* centrerer billedet horisontalt */
+    justify-content: left;  /* centrerer billedet horisontalt */
     align-items: center;     /* centrerer billedet lodret */
+}
+/* MOBILE: stack layout + responsive image */
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;   /* single column */
+        padding: 2rem 1rem;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .hero-image-wrap {
+        justify-content: center;      /* center image on mobile */
+    }
+
+    .hero-image {
+        width: 100%;                  /* full width image */
+        height: auto;                 /* keep aspect ratio */
+        max-width: 400px;             /* optional max size */
+    }
+
+    .hero-text h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-text p {
+        font-size: 1.4rem;
+    }
 }
 
 /* CARDS */
