@@ -100,7 +100,7 @@ body {
 /* MAIN CONTENT */
 .content-block {
     padding: 60px 134px;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 55px;
     max-width: 1268px;
 }
@@ -128,7 +128,7 @@ body {
 }
 
 .column p {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 55px;
 }
 
