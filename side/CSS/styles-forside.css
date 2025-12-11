@@ -169,13 +169,13 @@ footer, header, hgroup, menu, nav, section {
 
 .hero-image {
     width: auto;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
 .hero-image-wrap {
     display: flex;             /* sætter det på række */
-    justify-content: left;  /* centrerer billedet horisontalt */
-    align-items: center;     /* centrerer billedet lodret */
+    justify-content: left;
+    padding-top: 10%;    /* centrerer billedet lodret */
 }
 /* MOBILE: stack layout + responsive image */
 @media (max-width: 768px) {
@@ -191,11 +191,8 @@ footer, header, hgroup, menu, nav, section {
     }
 
     .hero-image {
-        width: 100%;                  /* full width image */
-        height: auto;                 /* keep aspect ratio */
-        max-width: 400px;             /* optional max size */
+        display: none;               /* skjuler billedet på mobil */
     }
-
     .hero-text h1 {
         font-size: 2.4rem;
     }
