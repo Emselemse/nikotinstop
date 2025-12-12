@@ -164,8 +164,8 @@ footer, header, hgroup, menu, nav, section {
     max-width: 1500px;   /* maks bredde på boksen */
     background: #E0BC61;  /* gul farve */
     padding: 40px;       /* padding inde i boksen */
-    margin: 1.8rem auto;     /* centrerer boksen */
-    border-radius: 3px;      /* rundede hjørner */
+    margin: 1.5rem auto;     /* centrerer boksen */
+    border-radius: 15px;      /* rundede hjørner */
     font-size: 1.8rem;        /* tekst størrelse i boksen */
 }
 .gray-box summary {

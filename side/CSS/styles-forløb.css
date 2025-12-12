@@ -182,8 +182,6 @@ footer, header, hgroup, menu, nav, section {
 }
 
 
-
-
 /* MOBILE STACKING */
 @media (max-width: 820px) {         /* når skærmen er mindre end 820px (media query) */
 
@@ -211,6 +209,8 @@ footer, header, hgroup, menu, nav, section {
         margin-right: auto;         
     }   
 }
+
+
 /* FOOTER */
 .footer {
     max-width: flex;         /* maks bredde på footeren */
