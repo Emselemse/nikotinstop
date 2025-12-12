@@ -179,4 +179,9 @@ body {
     margin-left: right;             /* skubber kolonnen til højre på brede skærme */
     text-align: center;        /* centrerer teksten i kolonnen */
     } 
+    .footer-col.left {         /* venstre kolonne i footeren */
+        column-width: flex;
+        margin-right: left;          /* skubber kolonnen til venstre på brede skærme */
+        text-align: center;        /* centrerer teksten i kolonnen */
 } 
+}
