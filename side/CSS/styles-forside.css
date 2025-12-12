@@ -187,7 +187,7 @@ footer, header, hgroup, menu, nav, section {
     }
 
     .hero-image-wrap {
-        justify-content: center;      /* center image on mobile */
+        justify-content: auto;  /* centrerer billedet horisontalt */
     }
 
     .hero-image {
