@@ -8,18 +8,35 @@
 </head>
 
 <body>
-<header class="topnav"> 
-    <a href="forside.html">
+
+<header class="topnav">
+
+    <a href="index.html">
         <img class="logo" src="billeder/Logo.png" alt="logo" />
     </a>
 
-    <nav class="nav-links">
+    <!-- MOBILE MENU (collapsible) -->
+    <details class="mobile-menu">
+        <summary>MENU</summary>
+
+        <nav class="nav-links mobile-links">
+            <a href="Tips.html">TIPS & TRICKS</a>
+            <a href="forløb.html">FORLØBSBESKRIVELSE</a>
+            <a href="afhængighed.html">SÅDAN VIRKER AFHÆNGIGHED</a>
+            <a href="FAQ.html">FAQ</a>
+        </nav>
+    </details>
+
+    <!-- DESKTOP MENU (normal) -->
+    <nav class="nav-links desktop-links">
         <a href="Tips.html">TIPS & TRICKS</a>
         <a href="forløb.html">FORLØBSBESKRIVELSE</a>
-        <a href="#">SÅDAN VIRKER AFHÆNGIGHED</a>
-        <a href="#">FAQ</a>
+        <a href="afhængighed.html">SÅDAN VIRKER AFHÆNGIGHED</a>
+        <a href="FAQ.html">FAQ</a>
     </nav>
+
 </header>
+
 
 
 <section class="hero"> <!--hero sektion-->
@@ -137,7 +154,9 @@
 
     <div class="footer-col center"> <!--midterste kolonne i footeren-->
         <p>FIND OS HER</p> <!--tekst i midterste kolonne-->
-        <img class="soc1" src="https://placehold.co/48x53" /> <!--sociale medier ikoner-->
+        <a href=""></a>
+        <img class="soc1" src="https://placehold.co/48x53" />
+        </a>
         <img class="soc2" src="https://placehold.co/60x48" />
         <img class="soc3" src="https://placehold.co/54x56" />
     </div>
