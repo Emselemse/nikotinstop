@@ -70,8 +70,8 @@ footer, header, hgroup, menu, nav, section {
     display: none;
 }
 
-/* MOBILE LAYOUT */             /* fra CHATGPT */ 
-@media (max-width: 700px) {
+/* MOBILE LAYOUT */
+@media (max-width: 700px) {             /*CHAT GPT hjulpet med denne kode*/
 
     /* hide desktop links */
     .desktop-links {
@@ -168,18 +168,17 @@ footer, header, hgroup, menu, nav, section {
 
 
 .hero-image {
-    width: 500px;
-    height: auto;
+    width: auto;
     border-radius: 4px;
 }
 
 .hero-image-wrap {
     display: flex;             /* sætter det på række */
-    justify-content: left;
-    padding-top: 10%;    /* centrerer billedet lodret */
+    justify-content: left;    /* justerer billedet til venstre */
+    padding-top: 6%;         /* afstand over billedet */
 }
 /* MOBILE: stack layout + responsive image */
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
     .hero {
         grid-template-columns: 1fr;   /* single column */
         padding: 2rem 1rem;
@@ -188,7 +187,7 @@ footer, header, hgroup, menu, nav, section {
     }
 
     .hero-image-wrap {
-        justify-content: auto;  /* centrerer billedet horisontalt */
+        justify-content: center;      /* center image on mobile */
     }
 
     .hero-image {
