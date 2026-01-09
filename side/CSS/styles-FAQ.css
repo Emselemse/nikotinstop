@@ -41,7 +41,7 @@ body {
     font-size: 1.2rem;
 }
 
-/* HIDE mobile version on desktop */
+/* gemmer mobil versionen på desktop */
 .mobile-menu,
 .mobile-links {
     display: none;
